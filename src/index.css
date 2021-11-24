@@ -74,6 +74,16 @@ a {
   align-items: center;
 }
 
+.messageWrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
 .message {
   display: block;
   width: fit-content;

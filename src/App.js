@@ -10,16 +10,10 @@ function App() {
 
   return (
     <div className='app'>
+      {user && <Sidebar />}
+
       <Routes>
         <Route path='/login' element={user ? <Navigate to='/' /> : <Login />} />
-        <Route
-          path='/'
-          element={
-            <PrivateRoute>
-              <Sidebar />
-            </PrivateRoute>
-          }
-        />
         <Route
           path='/*'
           element={

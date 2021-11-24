@@ -17,6 +17,7 @@ const Login = () => {
       headers: { 'content-type': 'application/json' },
       credentials: 'include',
       mode: 'cors',
+      body: JSON.stringify({ username, password }),
     });
 
     const data = await response.json();
